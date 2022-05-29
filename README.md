@@ -22,8 +22,30 @@ Descrever passo a passo, a instrução para criação de um pipeline na AWS, de 
 <b>Descrição</b><p>
 - Crie uma bucket S3, no exemplo a seguir criei a bucket www-xpto.techroute.com.br.<p> 
 
-<b>Observação</b>
- ```
- Não definir a bucket criada como pública, pois as permissões de origem de acesso ao conteúdo será concedida a distribuição CloudFront.
- ```
+
+Marque as opções [ACLs enabled] e [Object writer]
+![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-bucket-1.png) 
+
+Logo mais abaixo, em <b>Bucket Versioning</b> marque a opção [Enable]
+![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-bucket-2.png)
+
+Desça a barra de rolagem para baixo e clique em [Create bucket]
+![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-bucket-3.png)
+
+
+Ainda não definições da bucket criada, na guia <b>[Management]</b>, clique em <b>[Create lifecycle rule]</b>
+![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-bucket-4.png)
+
+Na tela de configurações do lifecycle, em <b>Choose a rule scope</b>, selecione a opção <b>Apply to all objects in the object</b> conforme imagem abaixo
+![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-bucket-5.png)
+
+Desça a barra de rolagem para baixo e em <b>Lifecycle rule actions</b> selecione a opção
+- [x] Permanently delete noncurrent versions of objects
+Logo abaixo, em <b>Permanently delete noncurrent versions of objects</b> defina as os valores das propriedades de acordo com as suas necessidades, nesse exemplo, determinei manter 3 versões dos objetos por um período de 30 dias cada versão. 
+![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-bucket-6.png)
+
+```
+Nota: Vale lembrar que, já possuímos todo o conteúdo do site no github em uma ou mais branchs, além de pudermos restaurar uma branch que foi removida.
+```
+
 
