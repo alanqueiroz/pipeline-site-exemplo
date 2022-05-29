@@ -21,5 +21,9 @@ Descrever passo a passo, a instrução para criação de um pipeline na AWS, de 
 
 <b>Descrição</b><p>
 - Crie uma bucket S3, no exemplo a seguir criei a bucket www-xpto.techroute.com.br.<p> 
- <b>Observação</b>: {c:#B81365}Não definir como pública, pois o conteúdo será acessível pelo CloudFront.{/c}<p>
-- Habilite a opção ACLOwnership, na guia Permissions na bucket para que seja possível aplicar ACLs em objetos.
+
+<b>Observação</b>
+ ```
+ Não definir a bucket criada como pública, pois as permissões de origem de acesso ao conteúdo será concedida a distribuição CloudFront.
+ ```
+
