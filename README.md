@@ -45,7 +45,10 @@ Logo abaixo, em <b>Permanently delete noncurrent versions of objects</b> defina 
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-bucket-6.png)
 
 ```
-Nota: Vale lembrar que, já possuímos todo o conteúdo do site no github em uma ou mais branchs, além de pudermos restaurar uma branch que foi removida.
+Nota: Vale lembrar que, já possuímos todo o conteúdo do site no github em uma ou mais branchs.
 ```
 
+- Na console da AWS busque por <b>CloudFront</b> ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-cloudfront-1.png)
 
+Nas definições/configurações do CloudFront clique em <b>[Create distribution]</b>
+![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-cloudfront-2.png)
