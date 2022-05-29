@@ -37,7 +37,7 @@ Ainda nas definições da bucket criada, na guia <b>[Management]</b>, clique em 
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-bucket-4.png)
 
 Na tela de configurações do lifecycle, em <b>Choose a rule scope</b>, selecione a opção <b>Apply to all objects in the object</b> conforme imagem abaixo
-![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-bucket-5.png)
+![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-bucket-retencao-3.png)
 
 Desça a barra de rolagem para baixo e em <b>Lifecycle rule actions</b> selecione a opção
 - [x] Permanently delete noncurrent versions of objects
