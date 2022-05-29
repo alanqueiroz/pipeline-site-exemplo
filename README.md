@@ -23,23 +23,23 @@ Descrever passo a passo, a instrução para criação de um pipeline na AWS, de 
 - Crie uma bucket S3, no exemplo a seguir criei a bucket www-xpto.techroute.com.br.<p> 
 
 
-Marque as opções [ACLs enabled] e [Object writer]
+- Marque as opções [ACLs enabled] e [Object writer]
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-bucket-1.png) 
 
-Logo mais abaixo, em <b>Bucket Versioning</b> marque a opção [Enable]
+- Mais abaixo, em <b>Bucket Versioning</b> marque a opção [Enable]
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-bucket-2.png)
 
-Desça a barra de rolagem para baixo e clique em [Create bucket]
+- Desça a barra de rolagem para baixo e clique em [Create bucket]
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-bucket-3.png)
 
 
-Ainda nas definições da bucket criada, na guia <b>[Management]</b>, clique em <b>[Create lifecycle rule]</b>
+- Ainda nas definições da bucket criada, na guia <b>[Management]</b>, clique em <b>[Create lifecycle rule]</b>
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-bucket-4.png)
 
-Na tela de configurações do lifecycle, em <b>Choose a rule scope</b>, selecione a opção <b>Apply to all objects in the object</b> conforme imagem abaixo
+- Na tela de configurações do lifecycle, em <b>Choose a rule scope</b>, selecione a opção <b>Apply to all objects in the object</b> conforme imagem abaixo
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-bucket-retencao-3.png)
 
-Desça a barra de rolagem para baixo e em <b>Lifecycle rule actions</b> selecione a opção
+- Desça a barra de rolagem para baixo e em <b>Lifecycle rule actions</b> selecione a opção
 - [x] Permanently delete noncurrent versions of objects
 Logo abaixo, em <b>Permanently delete noncurrent versions of objects</b> defina as os valores das propriedades de acordo com as suas necessidades, nesse exemplo, determinei manter 3 versões dos objetos por um período de 30 dias cada versão. 
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-bucket-6.png)
@@ -47,6 +47,9 @@ Logo abaixo, em <b>Permanently delete noncurrent versions of objects</b> defina 
 ```
 Nota: Vale lembrar que, já possuímos todo o conteúdo do site no github em uma ou mais branchs.
 ```
+
+Ainda em S3, crie uma nova bucket com o mesmo nome alterando o sufixo, acrescente <b>-log</b> 
+Exemplo: <b>www-xpto.techroute.com.br-log</b>, nesse momento, não será necessário tornar essa bucket pública, mas defina as configurações de <b>[ACLs enabled]</b> e <b>[Object writer]</b>
 
 - Na console da AWS busque por <b>CloudFront</b>
 
@@ -82,3 +85,5 @@ Nota: Vale lembrar que, já possuímos todo o conteúdo do site no github em uma
 - Em <b>Standard logging</b> marque a opção <b>On</b> e selecione uma bucket que armazenará os logs do CloudFront, por fim no campo <b>Description - optional</b> adicione uma breve descrição para identificar com a facildade essa distribuição de CDN.
 
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-cloudfront-8.png)
+
+- Ainda nas configurações do CloudFront 
