@@ -49,7 +49,7 @@ Nota: Vale lembrar que, já possuímos todo o conteúdo do site no github em uma
 ```
 
 Ainda em S3, crie uma nova bucket com o mesmo nome alterando o sufixo, acrescente <b>-log</b> 
-Exemplo: <b>www-xpto.techroute.com.br-log</b>, nesse momento, não será necessário tornar essa bucket pública, mas defina as configurações de <b>[ACLs enabled]</b> e <b>[Object writer]</b>
+Exemplo: <b>www-xpto.techroute.com.br-log</b>, nesse momento, não será necessário tornar essa bucket pública, mas defina as configurações de <b>Object Owership</b> como <b>[ACLs enabled]</b> e <b>[Object writer]</b>
 
 - Na console da AWS busque por <b>CloudFront</b>
 
