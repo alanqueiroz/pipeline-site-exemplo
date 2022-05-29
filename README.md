@@ -48,27 +48,37 @@ Logo abaixo, em <b>Permanently delete noncurrent versions of objects</b> defina 
 Nota: Vale lembrar que, já possuímos todo o conteúdo do site no github em uma ou mais branchs.
 ```
 
-- Na console da AWS busque por <b>CloudFront</b> ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-cloudfront-1.png)
+- Na console da AWS busque por <b>CloudFront</b>
 
-Nas definições/configurações do CloudFront clique em <b>[Create distribution]</b>
+![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-cloudfront-1.png)
+
+- Nas definições/configurações do CloudFront clique em <b>[Create distribution]</b>
+
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-cloudfront-2.png)
 
-Em <b>Origin domain</b> busque e selecione a bucket que foi criada em passos anteriores.
+- Em <b>Origin domain</b> busque e selecione a bucket que foi criada em passos anteriores.
+
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-cloudfront-3.png)
 
-Desça a barra de rolagem para baixo, selecione a opção <b>Yes use OAI (bucket can restrict access to only CloudFront</b> clique em [<b>Create new OAI</b>] e por fim marque a opção <b>Yes, update the bucket policy</b>
+- Desça a barra de rolagem para baixo, selecione a opção <b>Yes use OAI (bucket can restrict access to only CloudFront</b> clique em [<b>Create new OAI</b>] e por fim marque a opção <b>Yes, update the bucket policy</b>
+
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-cloudfront-4.png)
+
 
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-cloudfront-5.png)
 
-Em <b>Default cache behavior</b> em <b>Viewer</b> selecione a opção <b>GET, HEAD</b>
+- Em <b>Default cache behavior</b> em <b>Viewer</b> selecione a opção <b>GET, HEAD</b>
+
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-cloudfront-6.png)
 
-Mais abaixo, em <b>Settings</b> selecione o certificado SSL Wilcard correspondente ao domínio que está trabalhando.
+- Mais abaixo, em <b>Settings</b> selecione o certificado SSL Wilcard correspondente ao domínio que está trabalhando.
+
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-cloudfront-7.png)
 
-Rola a barra de rolagem para baixo e preencha os campos conforme image abaixo:
-<p>
-Em <b>Default root object - optional</b> informe o nome do objeto que corresponde as requisições do site em "/"
-Em <b>Standard logging</b> marque a opção <b>On</b> e selecione uma bucket que armazenará os logs do CloudFront, por fim no campo <b>Description - optional</b> adicione uma breve descrição para identificar com a facildade essa distribuição de CDN.
+- Desça a barra de rolagem para baixo e preencha os campos conforme image abaixo:
+
+- Em <b>Default root object - optional</b> informe o nome do objeto que corresponde as requisições do site em "/"
+
+- Em <b>Standard logging</b> marque a opção <b>On</b> e selecione uma bucket que armazenará os logs do CloudFront, por fim no campo <b>Description - optional</b> adicione uma breve descrição para identificar com a facildade essa distribuição de CDN.
+
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-cloudfront-8.png)
