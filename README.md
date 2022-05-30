@@ -86,4 +86,6 @@ Exemplo: <b>www-xpto.techroute.com.br-log</b>, nesse momento, não será necess�
 
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-cloudfront-8.png)
 
-- Ainda nas configurações do CloudFront 
+- Ainda nas configurações do CloudFront, na terceira guia em <b>[Error pages]</b> clique em <b>[Create custom error response]</b>, na próxima tela em <b>[HTTP error code]</b> selecione <b>404: Not Found </b> em <b>Custom response code</b> selecione <b>Yes</b> e em <b>Response page path</b> informe "/404" sem as aspas e em <b>HTTP response code</b>, selecione <b>404: Not Found</b>
+
+![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/custom-error-page-cloudfront-1.png)
