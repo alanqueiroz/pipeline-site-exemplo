@@ -86,6 +86,16 @@ Exemplo: <b>www-xpto.techroute.com.br-log</b>, nesse momento, não será necess�
 
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-cloudfront-8.png)
 
-- Ainda nas configurações do CloudFront, na terceira guia em <b>[Error pages]</b> clique em <b>[Create custom error response]</b>, na próxima tela em <b>[HTTP error code]</b> selecione <b>404: Not Found </b> em <b>Custom response code</b> selecione <b>Yes</b> e em <b>Response page path</b> informe "/404" sem as aspas e em <b>HTTP response code</b>, selecione <b>404: Not Found</b>
+- Ainda nas configurações do CloudFront, na terceira guia em <b>[Error pages]</b> clique em <b>[Create custom error response]</b>, na próxima tela em <b>[HTTP error code]</b> selecione <b>404: Not Found </b> em <b>Custom response code</b> selecione <b>Yes</b> e em <b>Response page path</b> informe "/404" sem as aspas e em <b>HTTP response code</b>, selecione <b>404: Not Found</b> por fim clique em [Create custom error response]
 
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/custom-error-page-cloudfront-1.png)
+
+
+<b>Nota</b>: Repita os mesmos passos, para configurar uma página de erro customizada para o erro <b>403</b> ou qualquer outro erro que deseje, substituindo apenas pelo código de erro correspondente.
+
+- Na console da AWS, busque por <b>CodePipeline</b>, logo abaixo de <b>Pipelines</b> clique em <b>Settings</b> em seguida clique em <b>Connections</b> depois clique em [Create connection]
+
+![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-connection-1.png)
+
+
+
