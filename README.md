@@ -123,5 +123,16 @@ Na próxima tela, informe um nome para o pipeline que está criando e clique em 
 
 Na tela seguinte, selecione o source provider, ou seja, o local remoto que o site encontra-se hospedado, no exemplo estou utilizando GitHub, poderia ser no Bitbucket, Gitlab entre outros. Em <b>connection</b> selecione a conexão que foi configurado com o <b>GitHub</b> em passos anteriores, em <b>repository name</b> selecione o repositório e por fim, em <b>Branch name</b> selecione a branch que deseja colocar no pipeline, no exemplo abaixo estou utilizando a branch <b>master</b>
 
+![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-pipeline-3.png)
 
+Na próxima tela de <b>Build</b>, em <b>Build provider</b> selecione <b>AWS CodeBuild</b> e clique em [Create project]
 
+![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-pipeline-4.png)
+
+Na janela que será exibida, em <b>Project name</b> defina um nome para o seu projeto de build, e no campo <b>Description - optional</b> insira uma descrição para o seu projeto de build.
+
+![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-pipeline-5.png)
+
+Desça a barra de rolagam para baixo, em <b>Operation system</b> selecione o sistema operacional utilizado para realizar o build, iremos utilizar <b>Amazon Linux 2</b> em <b>Runtime(s)</b> será o <b>Standard</b> em <b>Image</b> faremos uso da última versão disponível no momento, que é a versão 3:0
+
+![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-pipeline-6.png)
