@@ -97,7 +97,7 @@ Exemplo: <b>www-xpto.techroute.com.br-log</b>, nesse momento, não será necess�
 
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-connection-1.png)
 
-Na próxima tela, selecione o repositório remoto de código, descreva um nome para a conexão a ser estabelecida e por fim clique em [Connect to GitHub], caso tenha escolhido GitHub, a mesma afirmação se faz verdadeira para BitBucket.
+- Na próxima tela, selecione o repositório remoto de código, descreva um nome para a conexão a ser estabelecida e por fim clique em [Connect to GitHub], caso tenha escolhido GitHub, a mesma afirmação se faz verdadeira para BitBucket.
 
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-connection-2.png)
 
@@ -105,10 +105,23 @@ Na tela seguinte clique em [Install a new app], caso ainda não tem uma conexão
 
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-connection-3.png)
 
-Nessa etapa, busque e selecione o repositório desejado, nesse exemplo estou selecionando o repositório "techroute" que é um repositório privada, trata-se do repositório que contém o conteúdo do site que será implantado
+- Nessa etapa, busque e selecione o repositório desejado, nesse exemplo estou selecionando o repositório "techroute" que é um repositório privada, trata-se do repositório que contém o conteúdo do site que será implantado
 
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-connection-4.png)
 
 Por fim, na próxima tela clique em [Connect]
 
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-connection-5.png)
+
+- Na console da AWS busque por <b>CodePipeline</b>, e em <b>Pipelines</b> clique em [Create pipeline]
+
+![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-pipeline-1.png)
+
+Na próxima tela, informe um nome para o pipeline que está criando e clique em [Next] conforme imagem abaixo:
+
+![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-pipeline-2.png)
+
+Na tela seguinte, selecione o source provider, ou seja, o local remoto que o site encontra-se hospedado, no exemplo estou utilizando GitHub, poderia ser no Bitbucket, Gitlab entre outros. Em <b>connection</b> selecione a conexão que foi configurado com o <b>GitHub</b> em passos anteriores, em <b>repository name</b> selecione o repositório e por fim, em <b>Branch name</b> selecione a branch que deseja colocar no pipeline, no exemplo abaixo estou utilizando a branch <b>master</b>
+
+
+
