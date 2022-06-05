@@ -156,7 +156,7 @@ Nessa tela seguinte clique em [NEXT]
 Na próxima tela clique em [Skip deploy stage]
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-pipeline-10.png)
 
-Por fim, desça a barra de rolagem até o final e clique em [Create pipeline], nesse momento o pipeline será criado e o mesmo será executado automaticamente.
+Por fim, desça a barra de rolagem até o final e clique em [Create pipeline], nesse momento o pipeline será criado e o mesmo será executado automaticamente. Mas, um erro ocorrerá na execução, será necessário anexar duas policies na role <b> </b>
 
 
 
