@@ -180,3 +180,5 @@ Em <b>Resource assignment name</b> informe um nome para o seu recurso, em <b>Def
 Em Resource type selecione o recurso S3 e busque pelo nome da sua bucket, por fim clique em [Assign resources]
 
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-backup-3.png)
+
+- Dashboard com Grafana - Em construção
