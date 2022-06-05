@@ -1,0 +1,9 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+       - aws cloudfront create-invalidation --distribution-id $ID_CLOUDFRONT --paths "/*" 
+       - find $CODEBUILD_SRC_DIR/ -type f -iname '*.html' -print0 | while read -d $'\0' f; do mv "$f" "${f%.html}"; done
+       - aws s3 sync $CODEBUILD_SRC_DIR/ s3://NOME_DA_BUCKET/ --size-only --exclude "*" --include "*.*" --delete
+       - aws s3 sync $CODEBUILD_SRC_DIR/ s3://NOME_DA_BUCKET/ --size-only --content-type text/html --exclude "*.*" --delete

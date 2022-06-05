@@ -136,3 +136,16 @@ Na janela que será exibida, em <b>Project name</b> defina um nome para o seu pr
 Desça a barra de rolagam para baixo, em <b>Operation system</b> selecione o sistema operacional utilizado para realizar o build, iremos utilizar <b>Amazon Linux 2</b> em <b>Runtime(s)</b> será o <b>Standard</b> em <b>Image</b> faremos uso da última versão disponível no momento, que é a versão 3:0
 
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-pipeline-6.png)
+
+Na próxima tela em <b>Buildspec</b>, selecione a opção <b>Insert build commands</b> e insira o buildspec.yml disponível na raiz desse repositório.
+
+![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-pipeline-7.png)
+
+Nota: Não esqueça de editar o buildspec 
+
+Desça a barra de rolagem para baixo, no campo <b>Group name</b> defina um nome para o grupo de logs do CloudWatch, marque a opção <b>S3</b> e <b>S3 logs - optional</b> e selecione a bucket <b>S3</b> que armazenará os logs do <b>CloudWatch</b>, e por fim clique em [Continue to CodePipeline]
+
+![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-pipeline-8.png)
+
+
+
