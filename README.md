@@ -141,11 +141,13 @@ Na próxima tela em <b>Buildspec</b>, selecione a opção <b>Insert build comman
 
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-pipeline-7.png)
 
-Nota: Não esqueça de editar o buildspec 
+Nota: Não esqueça de editar o buildspec, alterando para os valores correspondentes ao seu ambiente, deverá ser subtituído <b> "$ID_CLOUDFRONT"</b> pelo ID da sua distribuição do CloudFront, e <b>s3://NOME_DA_BUCKET/</b> pelo endpoint da bucket do seu site.
 
 Desça a barra de rolagem para baixo, no campo <b>Group name</b> defina um nome para o grupo de logs do CloudWatch, marque a opção <b>S3</b> e <b>S3 logs - optional</b> e selecione a bucket <b>S3</b> que armazenará os logs do <b>CloudWatch</b>, e por fim clique em [Continue to CodePipeline]
 
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-pipeline-8.png)
+
+
 
 
 
