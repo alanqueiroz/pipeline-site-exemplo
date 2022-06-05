@@ -163,6 +163,6 @@ Por fim, desça a barra de rolagem até o final e clique em [Create pipeline], n
 - Police para atualizar o cloudfront <b>policy-atualizar-cloudfront.json</b>
 - Police para atualizar o bucket S3 <b>policy-atualizar-s3-site-xpto-exemplo.json</b>
 
-
+Por fim, realize um commit, alterando ou adicionando um item no repositório e acompanhe o pipeline ser executado.
 
 
