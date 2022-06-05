@@ -156,7 +156,13 @@ Nessa tela seguinte clique em [NEXT]
 Na próxima tela clique em [Skip deploy stage]
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-pipeline-10.png)
 
-Por fim, desça a barra de rolagem até o final e clique em [Create pipeline], nesse momento o pipeline será criado e o mesmo será executado automaticamente. Mas, um erro ocorrerá na execução, será necessário anexar duas policies na role <b> </b>
+Por fim, desça a barra de rolagem até o final e clique em [Create pipeline], nesse momento o pipeline será criado e o mesmo será executado automaticamente. Mas, um erro ocorrerá na execução, será necessário criar duas policies e anexar a role <b>codebuild-projeto-build-site-xpto-techroute-service-role
+</b><p>
+<b>Nota</b>: Em <b>IAM</b>, busque pela role correspondente ao seu projeto de build e anexe as duas policies que estão na raiz desse repositório.
+
+- Police para atualizar o cloudfront <b>policy-atualizar-cloudfront.json</b>
+- Police para atualizar o bucket S3 <b>policy-atualizar-s3-site-xpto-exemplo.json</b>
+
 
 
 
