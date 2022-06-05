@@ -167,6 +167,8 @@ Por fim, realize um commit, alterando ou adicionando um item no repositório e a
 
 - Adicione o bucket S3 do seu site, na rotina de bucket da AWS conforme os passos abaixo. 
 
+Nota: Adicionar o bucket a rotina de backup no AWS Backup não essencial, se não quiser adicionar não precisa, visto que temos o backup do nosso site no GitHub e distribuído em mais de uma bucket, mas eu julgo necessário por questões de segurança.
+
 No AWS backup, em seu plano de backup clique em [Assign resources] 
 
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/create-backup-1.png)
