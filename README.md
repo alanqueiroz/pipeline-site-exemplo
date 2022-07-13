@@ -20,7 +20,7 @@ Descrever passo a passo, a instrução para criação de um pipeline na AWS, de 
     - Oferecer atualizações rápidas, confiáveis, automatizar a fase de compilação e implantação sempre que ocorrer mudanças no código, sem que haja a necessidade de alocação de um profissional de infraestrutura, diminuir o custo operacional e tornar o ambiente mais resiliente.
 
 <b>Descrição</b><p>
-- Crie uma bucket S3, no exemplo a seguir criei a bucket www-xpto.techroute.com.br.<p> 
+- Crie uma bucket S3, no exemplo a seguir criei a bucket www.techroute.com.br.<p> 
 
 
 - Marque as opções [ACLs enabled] e [Object writer]
