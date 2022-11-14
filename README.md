@@ -1,4 +1,4 @@
-# Pipeline Site Exemplo - www-xtpo.techroute.com.br
+# Pipeline Site Exemplo - www.techroute.com.br
 Descrever passo a passo, a instrução para criação de um pipeline na AWS, de um site estático (HTML, CSS e JavaScript) de exemplo, que tem como proposta a arquitetura abaixo:
 
 ![alt text](https://s3.amazonaws.com/public.techroute.com.br/imagens/Arquitetura_SITE_XPTO-TECHROUTE.png)
